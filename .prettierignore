@@ -1,0 +1,19 @@
+# General
+.prettierignore
+.solhintignore
+.husky
+.gitignore
+.gitattributes
+.versionrc
+.env
+.env.example
+*.txt
+*.graphql
+.vscode/
+
+# JS
+node_modules
+yarn.lock
+yarn-error.log
+out/
+cache/
