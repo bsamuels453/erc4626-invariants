@@ -12,12 +12,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint:fix"
+      "pre-commit": "yarn lint:check"
     }
   },
   "scripts": {
     "lint": "pretty-quick --pattern '**/*.*(sol|json)' --verbose",
-    "lint:check": "prettier --check **/*.sol **/*.json",
+    "lint:check": "prettier --check **/*.sol **/*.json --staged",
     "lint:fix": "pretty-quick --pattern '**/*.*(sol|json)' --verbose",
     "test": "forge test -vvv",
     "postinstall": "husky install"
